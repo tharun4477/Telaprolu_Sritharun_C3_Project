@@ -62,4 +62,13 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
 
+    @Test
+    public void selecting_items_should_return_total_order_value() {
+        List<String> selectedItems=new ArrayList<String>();
+        selectedItems.add("Sweet corn soup");
+        selectedItems.add("Vegetable lasagne");
+        int totalOrderValue =restaurant.getTotalOrderValue(selectedItems);
+
+    }
+
 }
